@@ -1,0 +1,292 @@
+h1 { 
+    font-family: "Helvetica Neue";
+    font-size: 160px;
+    padding:0;
+    margin:0;
+}
+h2 { 
+    font-family: 'HelveticaNeue-Light', sans-serif;
+    font-size: 80px;
+    font-weight:200;
+    padding:0;
+    margin:0;
+}
+
+@keyframes ex1 {
+    0%   { 
+    transform: translateX(-200%); 
+    opacity:0;		
+    }
+    100% { 
+    transform: translateX(0%); 
+    opacity:1;
+    }
+}
+
+@keyframes ex2 {
+    0% {
+        top: -200%;
+        opacity:0;
+     }
+    100% {
+        top: 0%;
+        opacity:1;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity:0;
+     }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes FadeOut {
+    0% {
+        opacity:1;
+     }
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes FadeUp {
+    0% {
+        opacity:1;
+        top:0%;
+     }
+    100% {
+        opacity:0;
+        top:-50%;
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+body{
+    margin: 0;
+}   
+#intro{
+    background-color: white;
+    margin:0;
+    padding:0;
+    border:0;
+    overflow: hidden;
+}
+
+#line1 {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+    position:absolute;
+    margin: 0;
+    top:0;
+    left:0;
+    opacity: 0;
+    animation-name: ex1, FadeOut;
+    animation-duration: 4s, 1s;
+    animation-delay:0s, 5s;
+    animation-timing-function: ease-in, ease-in;
+    animation-fill-mode:forwards, forwards;
+
+
+}
+#line2 {
+    display:flex;
+    max-height:auto;
+    width:auto;
+    position:absolute;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    border: 0;
+    top:0;
+    left:26.25%;
+    opacity:0;
+    animation: ex2 0.5s ease-in;
+    animation-fill-mode:both;
+    animation-name: ex2, FadeOut;
+    animation-duration: 0.5s, 1s;
+    animation-delay:0s, 5s;
+    animation-timing-function: ease-in, ease-in;
+    animation-fill-mode:forwards, forwards;
+    
+}
+#line3 {
+    display:flex;
+    max-height:auto;
+    width:auto;
+    position:absolute;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    border: 0;
+    top:0;
+    left:7.4%;
+    opacity:0;
+    animation-name: ex2, FadeOut;
+    animation-duration: 0.5s, 1s;
+    animation-delay:0.5s, 5s;
+    animation-timing-function: ease-in, ease-in;
+    animation-fill-mode:forwards, forwards;
+}
+#line4 {
+    display:flex;
+    height:auto;
+    width:auto;
+    position:absolute;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    border: 0;
+    top:0;
+    left:44.35%;
+    opacity:0;
+    animation: ex2 0.5s ease-in 1s;
+    animation-fill-mode:forwards;
+    animation-name: ex2, FadeOut;
+    animation-duration: 0.5s, 1s;
+    animation-delay:1s, 5s;
+    animation-timing-function: ease-in, ease-in;
+    animation-fill-mode:forwards, forwards;
+}
+#line5 {
+    display:flex;
+    height:auto;
+    width:auto;
+    position:absolute;
+    overflow: hidden;
+    top:0;
+    margin: 0;
+    padding:0;
+    border: 0;
+    left:-5.93%;
+    opacity:0;
+    animation: ex2 0.5s ease-in 1.5s;
+    animation-fill-mode:forwards;
+    animation-name: ex2, FadeOut;
+    animation-duration: 0.5s, 1s;
+    animation-delay:1.5s, 5s;
+    animation-timing-function: ease-in, ease-in;
+    animation-fill-mode:forwards, forwards;
+}
+#line6 {
+    display:flex;
+    height:auto;
+    width:auto;
+    position:absolute;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    border: 0;
+    top:0;
+    left:40.5%;
+    opacity:0;
+    animation: ex2 0.5s ease-in 2s;
+    animation-fill-mode:forwards;
+    animation-name: ex1, FadeOut;
+    animation-duration: 0.5s, 1s;
+    animation-delay:2s, 5s;
+    animation-timing-function: ease-in, ease-in;
+    animation-fill-mode:forwards, forwards;
+}
+#line7 {
+    display:flex;
+    height:auto;
+    width:auto;
+    position:absolute;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    border: 0;
+    top:0;
+    left:35.4%;
+    opacity:0;
+    animation: ex2 0.5s ease-in 2.5s;
+    animation-fill-mode:forwards;
+    animation-name: ex1, FadeOut;
+    animation-duration: 0.5s, 1s;
+    animation-delay:2.5s, 5s;
+    animation-timing-function: ease-in, ease-in;
+    animation-fill-mode:forwards, forwards;
+}
+
+#name{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    margin: 0;
+    padding:0;
+    top: 0;
+    left:0;
+    opacity:0;
+    animation-name: FadeIn, FadeUp;
+    animation-duration: 0.5s, 1s;
+    animation-delay:3s, 6s;
+    animation-timing-function: ease-in, ease-in;
+    animation-fill-mode:forwards, forwards;
+}
+
+#home{
+}
+
+#small-home{
+    display: flex;
+    position:absolute;
+    margin-left:20%;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    opacity:0;
+    animation: FadeIn 0.2s linear 7s;
+    animation-fill-mode:forwards;
+    z-index: 1;
+}
+#selection {
+    display:flex;
+    position:absolute;
+    height:100%;
+    width:100%;
+    opacity:0;
+    animation: FadeIn 0.2s linear 7s;
+    animation-fill-mode:forwards;
+}
+#circle .lower{
+    position:absolute;
+    left: 50%;
+    margin-left: -400px;
+    top: 50%;
+    margin-top: -400px;
+    z-index:-1;
+
+}
+#circle .shadow{
+    position:absolute;
+    left: 50%;
+    margin-left: -400px;
+    top: 50%;
+    margin-top: -400px;
+    z-index:-1;
+    opacity:0;
+
+
+}
+
+
