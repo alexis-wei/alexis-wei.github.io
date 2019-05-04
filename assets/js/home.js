@@ -57,7 +57,7 @@ $("#enter").click(function(){
     $("#name").animate({"bottom": "+=600px"}, "slow");
     $("#nintro").delay(500).animate({"bottom": "+=600px"}, "slow");
     $("#intro").delay(500).fadeOut(1000);
-})
+});
 
 
 
