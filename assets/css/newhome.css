@@ -70,7 +70,7 @@ h2{
 #intro{
     width: 100%;
     height: 100%;
-    background-color: lightpink;
+    background-color:white;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -82,6 +82,7 @@ h2{
 #name {
     display:flex; 
     opacity:0;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -89,10 +90,17 @@ h2{
     height: 100%;
 }  
 
+#name1{
+    object-fit: cover;
+    position: absolute;
+    height: auto;
+    width: 233px;
+
+}
 #name2 {
     position: relative;
-    margin-top: 100px;
-    width: 400px;
+    margin-top: 240px;
+    width: 320px;
 
 }
 
@@ -181,3 +189,7 @@ h2{
     
 }
 
+
+#home {
+    opacity: 0;
+}

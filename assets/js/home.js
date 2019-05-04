@@ -39,8 +39,7 @@ function nameIntro(){
     document.getElementById("line4").style.opacity = "1";
     document.getElementById("line6").style.opacity = "1";
     document.getElementById("line5").style.opacity = "1";
-    $( "#name1" ).hide();
-    $( "#name2" ).hide();
+    $( "#name" ).hide();
     $( "#line1" ).animate({ "left": "+=2141px"}, "slow" );
     $("#line7").delay(200).animate({"left": "+=683.644px", "top": "+=1735.505px"},"slow");
     $("#line2").delay(400).animate({"top": "+=2232.965px"},"slow");
@@ -48,10 +47,11 @@ function nameIntro(){
     $("#line4").delay(800).animate({"left": "+=769.33px", "top": "+=2516.361px"},"slow");
     $("#line6").delay(1000).animate({"left": "+=1052.623px", "top": "+=2605.306px"},"slow");
     $("#line5").delay(1200).animate({"top": "+=2639.222px"},"slow");
-    document.getElementById("name1").style.opacity = "1";
-    document.getElementById("name2").style.opacity = "1";
-    $( "#name1").delay(2000).fadeIn();
-    $( "#name2").delay(2200).fadeIn();
+    document.getElementById("name").style.opacity = "1";
+    $( "#name").delay(2000).fadeIn();
+    $("#line,#line1").delay(2100).fadeOut();
+    $("#name").delay(2100).animate({"bottom": "+=200px"}, "slow");
+    $("#intro").delay(3600).fadeOut(2000);
 
 }
 
