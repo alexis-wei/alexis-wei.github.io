@@ -46,7 +46,12 @@ name appears while lines disappear
 */
 
 
-
+button {
+    font-family: 'HelveticaNeue-Light', sans-serif;
+    font-size: 30px;
+    padding:0;
+    margin:0;
+}
 h1{ 
     font-family: "Helvetica Neue";
     font-size: 160px;

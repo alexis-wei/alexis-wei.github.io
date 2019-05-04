@@ -49,11 +49,15 @@ function nameIntro(){
     $("#line5").delay(1200).animate({"top": "+=2639.222px"},"slow");
     document.getElementById("name").style.opacity = "1";
     $( "#name").delay(2000).fadeIn();
-    $("#line,#line1").delay(2100).fadeOut();
-    $("#name").delay(2100).animate({"bottom": "+=200px"}, "slow");
-    $("#intro").delay(3600).fadeOut(2000);
+    $("#line,#line1").delay(2100).fadeOut(500);
 
 }
+
+$("#enter").click(function(){
+    $("#name").animate({"bottom": "+=600px"}, "slow");
+    $("#nintro").delay(500).animate({"bottom": "+=600px"}, "slow");
+    $("#intro").delay(500).fadeOut(1000);
+})
 
 
 
