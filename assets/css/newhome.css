@@ -1,13 +1,183 @@
-h1 { 
+/* All the animations are here */
+/* Intro animation order: line 1 7 2 3 4 6 5 
+Line height to width ratios 
+
+line 2: 3.477  *r
+line 3: 3.376  *r
+line 4: 3.271  *l
+line 5: 2.475  *r
+line 6: 3.398  *l
+line 7: 2.538  *l
+
+total movements
+7 lines entering
+name appears while lines disappear
+
+*/
+
+/*
+
+@keyframes ex1 {
+    0%   { 
+    transform: translateX(-100%); 
+    opacity:0;		
+    }
+    50%{transform: translateX(-10%);
+        opacity:1;}
+    100% { transform: translateX(0%); 
+    opacity:1;
+    }
+}
+
+@keyframes ex2 {
+    0%   { 
+    transform: translateX(-1000.7%); 
+    transform: translateY(-50%); 
+    opacity:0;		
+    }
+    50%{transform: translateX(-3.47%);
+        transform: translateY(-10%); 
+        opacity:1;}
+    100% { transform: translateX(0%); 
+        transform: translateY(0%); 
+    opacity:1;
+    }
+}
+*/
+
+
+
+h1{ 
     font-family: "Helvetica Neue";
     font-size: 160px;
     padding:0;
     margin:0;
 }
-h2 { 
+h2{
     font-family: 'HelveticaNeue-Light', sans-serif;
     font-size: 80px;
     font-weight:200;
     padding:0;
     margin:0;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+#intro{
+    width: 100%;
+    height: 100%;
+    background-color: lightpink;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#name {
+    display:flex; 
+    opacity:0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}  
+
+#name2 {
+    position: relative;
+    margin-top: 100px;
+    width: 400px;
+
+}
+
+#line{
+    width: 100%;
+    height:100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    object-fit: cover;
+}
+
+#line1 {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width:200%;
+    height: 100%;
+    opacity: 0;
+    position:absolute;
+}
+
+#line2 {
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: 93px;
+    
+
+    
+}
+
+
+#line3 {
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: 22px;
+    
+
+
+}
+#line4 {
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: 66px;
+    
+
+
+}
+#line5 {
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: -97px;
+    
+
+}
+#line6 {
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: -3px;
+    
+}
+#line7 {
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: -38px;
+    
+}
+
