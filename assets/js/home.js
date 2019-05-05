@@ -50,11 +50,12 @@ function nameIntro(){
     document.getElementById("name").style.opacity = "1";
     $( "#name").delay(2000).fadeIn();
     $("#line,#line1").delay(2100).fadeOut(500);
+    $("#intro").delay(2200).animate({"bottom": "+=100px"}, "slow");
 }
 
 $("#enter").click(function(){
-    $("#name").animate({"bottom": "+=600px"}, "slow");
-    $("#nintro").delay(500).animate({"bottom": "+=600px"}, "slow");
+    $("#name").animate({"bottom": "+=800px"}, 2000);
+    $("#intro").delay(500).animate({"bottom": "+=800px"}, 2000);
     $("#intro").fadeOut(1000);
 });
 
