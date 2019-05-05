@@ -50,13 +50,12 @@ function nameIntro(){
     document.getElementById("name").style.opacity = "1";
     $( "#name").delay(2000).fadeIn();
     $("#line,#line1").delay(2100).fadeOut(500);
-
 }
 
 $("#enter").click(function(){
     $("#name").animate({"bottom": "+=600px"}, "slow");
     $("#nintro").delay(500).animate({"bottom": "+=600px"}, "slow");
-    $("#intro").delay(500).fadeOut(1000);
+    $("#intro").fadeOut(1000);
 });
 
 
