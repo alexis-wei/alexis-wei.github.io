@@ -49,13 +49,12 @@ function nameIntro(){
     $("#line5").delay(1200).animate({"top": "+=2639.222px"},"slow");
     document.getElementById("name").style.opacity = "1";
     $( "#name").delay(2000).fadeIn();
-    $("#line,#line1").delay(2100).fadeOut(500);
-    $("#intro").delay(2200).animate({"bottom": "+=100px"}, "slow");
+    $("#line,#line1").delay(2000).fadeOut(300);
+    $("#name1, #name2, #enter").delay(2200).animate({"bottom": "+=100px"}, 1000);
 }
 
 $("#enter").click(function(){
     $("#name").animate({"bottom": "+=800px"}, 2000);
-    $("#intro").delay(500).animate({"bottom": "+=800px"}, 2000);
     $("#intro").fadeOut(1000);
 });
 
