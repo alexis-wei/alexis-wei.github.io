@@ -40,6 +40,7 @@ function nameIntro(){
     document.getElementById("line6").style.opacity = "1";
     document.getElementById("line5").style.opacity = "1";
     $( "#name" ).hide();
+    $( "#home" ).hide();
     $( "#line1" ).animate({ "left": "+=2141px"}, "slow" );
     $("#line7").delay(200).animate({"left": "+=683.644px", "top": "+=1735.505px"},"slow");
     $("#line2").delay(400).animate({"top": "+=2232.965px"},"slow");
@@ -48,14 +49,16 @@ function nameIntro(){
     $("#line6").delay(1000).animate({"left": "+=1052.623px", "top": "+=2605.306px"},"slow");
     $("#line5").delay(1200).animate({"top": "+=2639.222px"},"slow");
     document.getElementById("name").style.opacity = "1";
-    $( "#name").delay(2000).fadeIn();
     $("#line,#line1").delay(2000).fadeOut(300);
+    $( "#name").delay(2000).fadeIn();
     $("#name1, #name2, #enter").delay(2200).animate({"bottom": "+=100px"}, 1000);
 }
 
 $("#enter").click(function(){
     $("#name").animate({"bottom": "+=800px"}, 2000);
     $("#intro").fadeOut(1000);
+    $( "#home" ).show();
+    document.getElementById("home").style.opacity = "1";
 });
 
 
