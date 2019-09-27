@@ -55,9 +55,13 @@ function nameIntro(){
 }
 
 $("#enter").click(function(){
-    $("#name").animate({"bottom": "+=800px"}, 2000);
-    $("#intro").fadeOut(1000);
-    $( "#home" ).show();
+    $("#name").fadeOut({ duration: 2000, queue: false });
+    //$("#name").animate({"bottom": "+=800px"}, 2000);
+    $("#name").animate({"bottom": "+=800px"}, { duration: 2000, queue: false });
+    //$("#intro").animate({
+       // backgroundColor: "transparent"}, 'slow');
+
+    $("#home").show();
     document.getElementById("home").style.opacity = "1";
 });
 
